@@ -33,4 +33,3 @@ public class Lagerbestand {
         System.out.println("In ihrem Lager befinden sich insgesamt " + gesamtMenge + " Artikel im Wert von "+ gesamtWert + "€" );
     }
 }
-/* https://github.com/milane2/Fnum.git
