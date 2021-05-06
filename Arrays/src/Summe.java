@@ -11,9 +11,7 @@ public class Summe {
         for (int i = 0; i < zahlen.length; i++){
             System.out.print("Werte " + (i+1) +":");
             zahlen[i] = IO.readInteger();
-
         }
-
         int anzahlGerande = 0;
         int anzahlUngerande = 0;
         int summeGerande = 0;
@@ -23,11 +21,8 @@ public class Summe {
             if (zahlen[i] % 2 == 0) {
                 anzahlGerande++;
                 summeGerande = summeGerande + zahlen[i];
-
             }else{
-
                 summeUngerande = summeUngerande + zahlen[i];
-
             }
         }
         System.out.println("Gerade Zahlen:");
