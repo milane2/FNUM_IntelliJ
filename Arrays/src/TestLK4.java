@@ -7,11 +7,14 @@ public class TestLK4 {
         Summe [] a = einlesen[] ;
         ausgaben[a];
         double summe = ermittlenSumme[a];
-        ystem.out.println("Die Summe ist "+ summe());
+        ystem.out.println("Die Summe ist " + " ~::~ ");
 
-        int a[] = new int[anzahl];
-        for (int i = 0; i < a.length; i++) {
-            a[i] = IO.readInteger();
+        public static int eingabe() throws IOException {
+
+            int a[] = new int[anzahl];
+            for (int i = 0; i < a.length; i++) {
+                a[i] = IO.readInteger();
+            }
         }
         int summe = 0;
         double gesamtWert = 0.0;
@@ -20,11 +23,13 @@ public class TestLK4 {
             gesamtWert = gesamtWert +  a[i] *  a[i];
         }
 
-       // System.out.println("Gerade Zahlen:");
-       // System.out.println("Anzahl :"+ anzahlGerande);
-       // System.out.println("Summe :"+ summeGerande);
-       // System.out.println("Ungerade Zahlen:");
-       // System.out.println("Anzahl :"+ anzahlGerande);
-       // System.out.println("Summe :" + anzahlUngerande );
+        public static int ausgabe() throws IOException {
+
+        // System.out.println("Gerade Zahlen:");
+        // System.out.println("Anzahl :"+ anzahlGerande);
+        // System.out.println("Summe :"+ summeGerande);
+        // System.out.println("Ungerade Zahlen:");
+        // System.out.println("Anzahl :"+ anzahlGerande);
+        // System.out.println("Summe :" + anzahlUngerande );
     }
 }
