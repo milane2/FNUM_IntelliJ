@@ -31,10 +31,10 @@ public class LK_Milane {
         if(endmenge < anfangsmenge / 2 ){
             System.out.print(endmenge +"***");
         }
-            System.out.println("Möchten sie den Vorgang wiederholen?");
+        System.out.println("Möchten sie den Vorgang wiederholen?");
 
-            //if(1 = true ,2 = false){
-           // }
+        //if(1 = true ,2 = false){
+        // }
     }
     public static double readdouble() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -50,10 +50,6 @@ public class LK_Milane {
         // br.readLine(); = String antwort = Integer antwort
         // Integer zahl = Integer.parseInt(antwort);
         //return zahl;
-        return Integer.parseInt(br.readLine().trim());  }
-
-
-
-
-
+        return Integer.parseInt(br.readLine().trim());
     }
+}

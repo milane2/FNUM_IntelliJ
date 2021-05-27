@@ -8,9 +8,11 @@ public class FestesArray {
         double a[] = new double[5];
         BufferedReader tastatur = new BufferedReader( new InputStreamReader(System.in));
 
+
         for (int i = 0; i < a.length;i++){
             System.out.print("Bitte "+(i+1)+" . Zahl erfassen: ");
             a[i] = Double.parseDouble(tastatur.readLine().replace(",",","));
+
         }
 
         System.out.println("Die erfasste Zahlen lauten");
