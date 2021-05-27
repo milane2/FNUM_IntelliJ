@@ -21,7 +21,9 @@ public class Summe {
             if (zahlen[i] % 2 == 0) {
                 anzahlGerande++;
                 summeGerande = summeGerande + zahlen[i];
-            }else{
+
+            } else {
+
                 summeUngerande = summeUngerande + zahlen[i];
             }
         }

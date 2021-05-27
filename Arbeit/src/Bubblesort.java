@@ -11,18 +11,19 @@ public class Bubblesort {
         for (int i = 0; i < s.length; i++) {
             s[i] = IO.readInteger();
 
-        int a;
-        int b;
+            int a;
+            int b;
 
-       if(a < b) {
-       return true;
+            if (a < b) {
+                return true;
 
-       } else {
-           return false;
-       }
-        int b;
-        int c = a ;
-        a =  b ;
-        b = c ;
+            } else {
+                return false;
+            }
+            int b;
+            int c = a ;
+            a =  b ;
+            b = c ;
+        }
     }
 }
