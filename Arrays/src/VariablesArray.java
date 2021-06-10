@@ -16,8 +16,8 @@ public class VariablesArray {
         }
 
         System.out.println("Eingegeben wurde:");
-        for (int i = 0; i < werte.length; i++);{
-       System.out.println(werte[1]);
+        for (int i = 0; i < werte.length; i++) {
+            System.out.println(werte[1]);
         }
     }
 }
