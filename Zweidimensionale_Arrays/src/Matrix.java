@@ -34,6 +34,7 @@ public class Matrix { //eine Matrix ist ein 2-dimensionales Array
         }
     }
 }
+
 //   ----------> (n) (Spalte)
 //  |
 //  |
