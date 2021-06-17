@@ -18,6 +18,7 @@ public class Einmal_Eins {
 
         // gib Element auf Konsole aus
         int element  = einmal3[zeile -1][spalte -1];
+        System.out.print("Ergebnis: ");
         System.out.println(element);
     }
 
