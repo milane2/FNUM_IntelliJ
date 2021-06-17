@@ -11,13 +11,13 @@ public class TestIO {
             System.out.println(IO.readString());
 
             System.out.print("Geben sie ein Integer ein: ");
-            System.out.println(IO.readInt());
+            System.out.println(IO.readInteger());
 
             System.out.print("Geben sie ein double ein: ");
-            System.out.println(IO.readdouble());
+            System.out.println(IO.readDouble());
 
             System.out.print("Soll das Programm wiederholt werden? ");
-            weiter = IO.readboolean();
+            weiter = IO.readBoolean();
         } while (weiter == true);
     }
 }

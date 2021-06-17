@@ -3,37 +3,61 @@ import java.io.IOException;
 public class Matrix { //eine Matrix ist ein 2-dimensionales Array
 
     public static void main(String[] args) throws IOException {
+       int[][] zahlenReihen = new int[10][10];
+       createArray(zahlenReihen);
 
-        System.out.println("Wie lang soll m sein?");
-        int m = IO.readInteger();
+    }
 
-        System.out.println("Wie lang soll n sein?");
-        int n = IO.readInteger();
+    private static void createArray(int[][] zahlenReihen) {
+    }
 
-//-------------------------------------------------------
+    //-----------------------------------------------------------------------------------------------------------------------
+    public static int[][] readIntArray2Dim() throws IOException {
 
-        int[][] zahlen =new int[m][n];
+        System.out.println("Nennen sie die Anzahl an Zeilen: ");
+        int zeilen = IO.readInteger();
+
+        System.out.println("Nennen sie die Anzahl an Spalten: ");
+        int spalten = IO.readInteger();
+
+        int[][] matrix = new int[zeilen][spalten];
 
         // Erste Schleife ist für die Spalten (m)
-        for (int i = 0; i < zahlen.length;i = i + 1){
-
+        for (int m = 0; m < matrix.length; m++) {
             // Zweite Schleife ist für die Zeilen (n)
-            for (int j = 0; j < zahlen.length;j = j + 1){
-                zahlen [i][j] = i - j;
+            for (int n = 0; n < matrix.length; n++) {
+                System.out.print("Zeile " + (m + 1) + ", Spalte " + ": ");
+                matrix[m][n] = IO.readInteger();
             }
-            System.out.println("Eingegeben wurde:");
-
-            for (int i = 0; i < zahlen.length; i++) {
+        }
+        return matrix;
+    }
+    //----------------------------------------------------------------------------------------------------------------------
+    public static void readIntArray2Dim(int[][] matrix){
+        for (int m = 0; m < matrix.length; m++) {
+            for (int n = 0; n < matrix.length; n++) {
+                System.out.print("Zeile " + (m + 1) + ", Spalte " + ": ");
+                System.out.print(matrix[m][n]);
             }
-            System.out.println("Eingegeben wurde:");
+        }
+    }
+    //-------------------------------------------------------------------------------------------------------------------------
+    public static void printtIntArray2DimAsMatrix(int[][] matrix){
+        for (int m = 0; m < matrix.length; m++) {
+            for (int n = 0; n < matrix.length; n++) {
+                System.out.print(matrix[m][n]);
 
-            for (int j = 0; j < zahlen.length; j++) {
-
-                System.out.println(zahlen[1][1]);
+                if (n < matrix[m].length - 1) {
+                    System.out.print(", ");
+                }
+                else {
+                    System.out.print("");
+                }
             }
         }
     }
 }
+//--------------------------------------------------------------------------------------------------------------------------
 
 //   ----------> (n) (Spalte)
 //  |

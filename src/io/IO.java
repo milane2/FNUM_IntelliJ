@@ -6,58 +6,124 @@ import java.io.InputStreamReader;
 
 public class IO {
 
-    //String
+    private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+    /**
+     * Liest einen Wahrheitswert von der Konsole ein.
+     *
+     * @return Der eingelesen Wahrheitswert.
+     * @throws IOException
+     */
+    public static boolean readBoolean() throws IOException {
+        while (true) {
+            String eingabe = br.readLine().trim();
+            if ((eingabe.equals("1"))
+                    || (eingabe.equalsIgnoreCase("j"))
+                    || (eingabe.equalsIgnoreCase("ja"))
+                    || (eingabe.equalsIgnoreCase("y"))
+                    || (eingabe.equalsIgnoreCase("yes"))
+                    || (eingabe.equalsIgnoreCase("w"))
+                    || (eingabe.equalsIgnoreCase("wahr"))
+                    || (eingabe.equalsIgnoreCase("t"))
+                    || (eingabe.equalsIgnoreCase("true"))) {
+                return true;
+            } else if ((eingabe.equals("0"))
+                    || (eingabe.equalsIgnoreCase("n"))
+                    || (eingabe.equalsIgnoreCase("nein"))
+                    || (eingabe.equalsIgnoreCase("no"))
+                    || (eingabe.equalsIgnoreCase("f"))
+                    || (eingabe.equalsIgnoreCase("falsch"))
+                    || (eingabe.equalsIgnoreCase("false"))) {
+                return false;
+            }
+            System.out.print("Ungültige Eingabe. Bitte erneut versuchen: ");
+        }
+    }
+
+    //----------------------------------------------------------------------------------------------------------------------
+
+    /**
+     * Liest eine Text von der Konsole ein.
+     *
+     * @return Der eingelesene Text.
+     * @throws IOException
+     */
     public static String readString() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String antwort = br.readLine();
-        return antwort;
+        return br.readLine();
     }
-    //Int
 
-    public static int readInt() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        // br.readLine(); = String antwort = Integer antwort
-        // Integer zahl = Integer.parseInt(antwort);
-        //return zahl;
-        return Integer.parseInt(br.readLine().trim());
-    }
-    //Double
+    //----------------------------------------------------------------------------------------------------------------------
 
-    public static double readdouble() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String antwort = br.readLine().replace(',', '.').trim();
-        Double zahl = Double.parseDouble(antwort);
+    /**
+     * Liest eine Kommazahl von der Konsole ein.
+     *
+     * @return Eine Kommazahl
+     * @throws IOException
+     */
+    public static double readDouble() throws IOException {
+        String text = br.readLine().trim().replace(',', '.');
+        double zahl = Double.parseDouble(text);
         return zahl;
-        //return Double.parseDouble(br.readLine().replace (',' , '.') .trim()) ;
     }
 
-        public static boolean readboolean() throws IOException {
-            BufferedReader input = new BufferedReader(new InputStreamReader().trim)
-            while (true) {
-                String tmpEingabe = input.readLine().trim();
-                if (tmpEingabe != null) {
-                    if ((tmpEingabe.equals("1"))
-                            ||(tmpEingabe.equalsIgnoreCase("j"))
-                            ||(tmpEingabe.equalsIgnoreCase("ja"))
-                            ||(tmpEingabe.equalsIgnoreCase("y"))
-                            ||(tmpEingabe.equalsIgnoreCase("yes"))
-                            ||(tmpEingabe.equalsIgnoreCase("w"))
-                            ||(tmpEingabe.equalsIgnoreCase("wahr"))
-                            ||tmpEingabe.equalsIgnoreCase("t"))
-                            ||(tmpEingabe.equalsIgnoreCase("true"))) {
-                        return true;
-                    } else if ((tmpEingabe.equals(""))
-                            ||(tmpEingabe.equalsIgnoreCase("n"))
-                            ||(tmpEingabe.equalsIgnoreCase("nein"))
-                            ||(tmpEingabe.equalsIgnoreCase("no"))
-                            ||(tmpEingabe.equalsIgnoreCase("f"))
-                            ||(tmpEingabe.equalsIgnoreCase("falsch"))
-                            ||(tmpEingabe.equalsIgnoreCase("false"))) {
-                        return false;
-                    }
-                }
-                System.out.print("Ungültige Eingabe. Bitte erneut versuchen:");
+    //----------------------------------------------------------------------------------------------------------------------
+
+    /**
+     * Liest eine Ganzzahl von der Konsole ein.
+     *
+     * @return Eine Ganzzahl.
+     * @throws IOException
+     */
+    public static int readInteger() throws IOException {
+        String text = br.readLine().trim();
+        int zahl = Integer.parseInt(text);
+        return zahl;
+    }
+
+    //----------------------------------------------------------------------------------------------------------------------
+
+    public static int[][] readIntArray2Dim() throws IOException {
+
+        System.out.println("Nennen sie die Anzahl an Zeilen: ");
+        int zeilen = IO.readInteger();
+
+        System.out.println("Nennen sie die Anzahl an Spalten: ");
+        int spalten = IO.readInteger();
+
+        int[][] matrix = new int[zeilen][spalten];
+
+        // Erste Schleife ist für die Spalten (m)
+        for (int m = 0; m < matrix.length; m++) {
+            // Zweite Schleife ist für die Zeilen (n)
+            for (int n = 0; n < matrix.length; n++) {
+                System.out.print("Zeile " + (m + 1) + ", Spalte " + ": ");
+                matrix[m][n] = IO.readInteger();
             }
         }
+        return matrix;
+    }
+    //----------------------------------------------------------------------------------------------------------------------
+    public static void readIntArray2Dim(int[][] matrix){
+        for (int m = 0; m < matrix.length; m++) {
+            for (int n = 0; n < matrix.length; n++) {
+                System.out.print("Zeile " + (m + 1) + ", Spalte " + ": ");
+                System.out.print(matrix[m][n]);
+            }
+        }
+    }
+    //-------------------------------------------------------------------------------------------------------------------------
+    public static void printtIntArray2DimAsMatrix(int[][] matrix){
+        for (int m = 0; m < matrix.length; m++) {
+            for (int n = 0; n < matrix.length; n++) {
+                System.out.print(matrix[m][n]);
+
+                if (n < matrix[m].length - 1) {
+                    System.out.print(", ");
+                }
+                else {
+                    System.out.print("");
+                }
+            }
+        }
+    }
 }
