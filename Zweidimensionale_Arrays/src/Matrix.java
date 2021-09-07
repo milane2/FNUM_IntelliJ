@@ -2,15 +2,12 @@ import java.io.IOException;
 
 public class Matrix { //eine Matrix ist ein 2-dimensionales Array
 
-    public static void main(String[] args) throws IOException {
-       int[][] zahlenReihen = new int[10][10];
-       createArray(zahlenReihen);
-
+    public static void main(String[] args)  {
+        int[][] zahlenReihen = new int[10][10];
+        createArray(zahlenReihen);
     }
-
     private static void createArray(int[][] zahlenReihen) {
     }
-
     //-----------------------------------------------------------------------------------------------------------------------
     public static int[][] readIntArray2Dim() throws IOException {
 
@@ -58,7 +55,6 @@ public class Matrix { //eine Matrix ist ein 2-dimensionales Array
     }
 }
 //--------------------------------------------------------------------------------------------------------------------------
-
 //   ----------> (n) (Spalte)
 //  |
 //  |
