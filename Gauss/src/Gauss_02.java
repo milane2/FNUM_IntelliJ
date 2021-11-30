@@ -34,16 +34,12 @@ public class Gauss_02 {
     //   }
 
     private static void korrigieren() throws IOException {
-
-        //   System.out.println("Sind alle Koeffizienten korrekt erfasst: ");
-//        boolean ok = IO.readBoolean();
-//        do {
-//            System.out.println(" Wollen Sie die Koeffizienten der linken(l) oder rechten Seite ändern");
-//
-
+       // System.out.println("Sind alle Koeffizienten korrekt erfasst: ");
+        //        boolean ok = IO.readBoolean();
+        //        do {
+        //            System.out.println(" Wollen Sie die Koeffizienten der linken(l) oder rechten Seite ändern");
+        //        }
     }
-
-
     private static void ausgabe(double[][] a, double[] b) {
         for (int i = 1; i < a.length; i++) {
             for (int k = 1; k < a[i].length; k++) {

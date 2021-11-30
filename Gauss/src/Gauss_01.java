@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class Gauss1 {
+public class Gauss_01 {
 
 
 
