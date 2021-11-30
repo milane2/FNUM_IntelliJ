@@ -37,9 +37,7 @@ public class IO {
             System.out.print("Ungültige Eingabe. Bitte erneut versuchen: ");
         }
     }
-
     //----------------------------------------------------------------------------------------------------------------------
-
     /**
      * Liest eine Text von der Konsole ein.
      *
@@ -49,9 +47,7 @@ public class IO {
     public static String readString() throws IOException {
         return br.readLine();
     }
-
     //----------------------------------------------------------------------------------------------------------------------
-
     /**
      * Liest eine Kommazahl von der Konsole ein.
      *
@@ -63,9 +59,7 @@ public class IO {
         double zahl = Double.parseDouble(text);
         return zahl;
     }
-
     //----------------------------------------------------------------------------------------------------------------------
-
     /**
      * Liest eine Ganzzahl von der Konsole ein.
      *
@@ -77,11 +71,8 @@ public class IO {
         int zahl = Integer.parseInt(text);
         return zahl;
     }
-
     //----------------------------------------------------------------------------------------------------------------------
-
     public static int[][] readIntArray2Dim() throws IOException {
-
         System.out.println("Nennen sie die Anzahl an Zeilen: ");
         int zeilen = IO.readInteger();
 
@@ -125,5 +116,3 @@ public class IO {
         }
     }
 }
-
-
