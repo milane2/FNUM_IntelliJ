@@ -1,6 +1,7 @@
 package GUI_Rahmen_010;
 
 public class Stater {
-
-    MyFrame frame=new MyFrame();
+     public static void main(String[] args) {
+        MyFrame frame=new MyFrame();
+    }
 }

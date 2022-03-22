@@ -28,19 +28,28 @@ public class MyFrame extends JFrame{
         frame.setContentPane(new GUI_Rahmen_12());
         frame.setPreferredSize(new Dimension(600, 550));
         frame.setVisible(true);
-
-
-
     }
+
     public double getA(){
         return a;
+    }
+    public void setA(double a){
+        this.a= a;
     }
     public double getB(){
         return b;
     }
+    public void setB(double b){
+        this.b= b;
+    }
+
     public double getC(){
         return c;
     }
+    public void setC(double c){
+        this.c= c;
+    }
+
     @Override
     public void paintComponents(Graphics g) {
         super.paintComponents(g);
@@ -74,7 +83,6 @@ public class MyFrame extends JFrame{
             if (i != 0) {
                 // sizeX/12 = 50 ==> alle 50 Pixel
 
-
                 g.drawString("|" + i, sizeX / 2 + i * sizeX / 12, sizeY / 2 + 10 + 20);
             }
         }
@@ -98,15 +106,15 @@ public class MyFrame extends JFrame{
                 g.drawString(".", sizeX / 2 + (int) (x * sizeX / 12), sizeY / 2 + 20 - (int) (y * sizeX / 12));
             }
         }
-
-// public Trainer getTrainer(){
-//        return  trainer;
-//    }
-//    public void setTrainer(Trainer trainer) {
-//        this.trainer = trainer;
-//    }
-//    public Torwart getTorwart(){
-//        return torwart;
-//    }
+        if (a != 0 || b != 0 || c != 0) {
+            double y;
+            int startX = sizeX / 100 - 1;
+            // Was bewirkt die Variable startX statt wie bisher von -5 bis 5 in der Schleife zu laufen?
+            for (double x = startX * -1; x <= startX; x = x + 0.001) {
+                y = a * x * x + b * x + c; g.setFont(fGraph);
+                g.drawString(".", sizeX / 2 + (int) (x * sizeX / 12), sizeY / 2 + 20 - (int) (y * sizeX / 12));
+            }
+        } g.setFont(f1);
     }
 }
+
