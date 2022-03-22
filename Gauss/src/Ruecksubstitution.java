@@ -28,22 +28,12 @@ public class Ruecksubstitution {
         ergebnis(x);
         //korrigieren(a, b)
             System.out.println("Soll das Programm erneut ablaufen? /j = Ja/ ");
-            weiter = readBoolean();
+            weiter = IO.readBoolean();
 
         } while (weiter == true);
     }
-    public static boolean readBoolean() throws IOException {
-        String booanswer = readString();
-        if ((booanswer.equalsIgnoreCase("ja") || booanswer.equalsIgnoreCase("j")|| booanswer.equalsIgnoreCase("1"))) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    public static String readString() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        return br.readLine();
-    }
+
+
     private static void ruecksubstituieren(double[][] a, double[] b, double[] x) {
         double summe;
 
@@ -85,3 +75,5 @@ public class Ruecksubstitution {
         }
     }
 }
+
+//Eliminer

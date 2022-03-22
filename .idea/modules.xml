@@ -5,9 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/Arbeit/Arbeit.iml" filepath="$PROJECT_DIR$/Arbeit/Arbeit.iml" />
       <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/FNUM_IntelliJ.iml" filepath="$PROJECT_DIR$/FNUM_IntelliJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FNum_Gui/FNum_Gui.iml" filepath="$PROJECT_DIR$/FNum_Gui/FNum_Gui.iml" />
       <module fileurl="file://$PROJECT_DIR$/Gauss/Gauss.iml" filepath="$PROJECT_DIR$/Gauss/Gauss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gauss_Milane/Gauss_Milane.iml" filepath="$PROJECT_DIR$/Gauss_Milane/Gauss_Milane.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IO_und_Math_class/IO_und_Math_class.iml" filepath="$PROJECT_DIR$/IO_und_Math_class/IO_und_Math_class.iml" />
       <module fileurl="file://$PROJECT_DIR$/Arrays/Test.iml" filepath="$PROJECT_DIR$/Arrays/Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unfertig/Unfertig.iml" filepath="$PROJECT_DIR$/Unfertig/Unfertig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wuerfel/Wuerfel.iml" filepath="$PROJECT_DIR$/Wuerfel/Wuerfel.iml" />
       <module fileurl="file://$PROJECT_DIR$/Zweidimensionale_Arrays/Zweidimensionale_Arrays.iml" filepath="$PROJECT_DIR$/Zweidimensionale_Arrays/Zweidimensionale_Arrays.iml" />
     </modules>
   </component>
